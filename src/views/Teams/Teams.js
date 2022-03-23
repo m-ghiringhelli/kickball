@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { getTeams } from '../../services/teams';
+import { Link } from 'react-router-dom';
 
 export default function Teams() {
   const [teams, setTeams] = useState([]);
@@ -23,7 +24,9 @@ export default function Teams() {
     <div>
       {teams.map((team) => (
         <div key={team.id}>
-          <h2>{team.name}</h2>
+          <Link to={`/teams/${team.id}`}>
+            <h2>{team.name}</h2>
+          </Link>
         </div>
       ))}
     </div>
