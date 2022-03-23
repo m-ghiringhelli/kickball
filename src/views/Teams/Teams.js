@@ -8,7 +8,7 @@ export default function Teams() {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const data = await getTeams();
+        const { data } = await getTeams();
         setTeams(data);
       } catch (e) {
         setErrorMessage('There was an issue loading the teams');
@@ -18,6 +18,12 @@ export default function Teams() {
   }, []);
   
   return (
-    <div>Teams</div>
+    <div>
+      {teams.map((team) => (
+        <div key={team.id}>
+          <h2>{team.name}</h2>
+        </div>
+      ))}
+    </div>
   );
 }
