@@ -3,6 +3,7 @@ import { BrowserRouter, Switch, Route } from 'react-router-dom';
 import Main from './views/Main/Main';
 import Teams from './views/Teams/Teams';
 import TeamDetail from './views/Teams/TeamDetail';
+import Players from './views/Players/Players';
 
 function App() {
 
@@ -19,6 +20,9 @@ function App() {
           </Route>
           <Route path='/teams'>
             <Teams />
+          </Route>
+          <Route path='/players'>
+            <Players />
           </Route>
         </Switch>
       </div>
