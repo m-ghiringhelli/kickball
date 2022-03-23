@@ -16,7 +16,9 @@ export default function Teams() {
     };
     fetchData();
   }, []);
-  
+
+  if (errorMessage) return <div>{errorMessage}</div>;
+
   return (
     <div>
       {teams.map((team) => (

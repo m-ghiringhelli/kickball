@@ -1,7 +1,8 @@
 import './App.css';
-import { getTeams } from './services/teams.js';
-import Teams from './views/Teams/Teams';
 import { BrowserRouter, Switch, Route } from 'react-router-dom';
+import Main from './views/Main/Main';
+import Teams from './views/Teams/Teams';
+import TeamDetail from './views/Teams/TeamDetail';
 
 function App() {
 
@@ -11,6 +12,12 @@ function App() {
         <h1>Portland Kickball</h1>
         <Switch>
           <Route exact path='/'>
+            <Main />
+          </Route>
+          <Route path='/teams/:id'>
+            <TeamDetail />
+          </Route>
+          <Route path='/teams'>
             <Teams />
           </Route>
         </Switch>
