@@ -4,12 +4,14 @@ import Main from './views/Main/Main';
 import Teams from './views/Teams/Teams';
 import TeamDetail from './views/Teams/TeamDetail';
 import Players from './views/Players/Players';
+import Header from './components/Header/Header';
 
 function App() {
 
   return (
     <BrowserRouter>
       <div className="App">
+        <Header />
         <h1>Portland Kickball</h1>
         <Switch>
           <Route exact path='/'>
