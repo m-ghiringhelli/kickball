@@ -4,21 +4,59 @@ header {
     background-position: 50% 65%;
 }
 
+h1 {
+    padding-top: 40px;
+    font-size: 3rem;
+    font-family: 'Libre Baskerville';
+    font-weight: 700;
+    color: white;
+}
+
+.subHeader {
+    display: flex;
+    justify-content: space-between;
+}
+
+.logos {
+    margin-left: 40px;
+}
+
+.player {
+    width: 60px;
+}
+
+.ball {
+    width: 40px;
+    position: relative;
+    bottom: 30px;
+}
+
 .navbar {
     display: flex;
     position: relative;
     justify-content: flex-end;
-    top: 140px;
+    top: 40px;
     margin-right: 50px;
+    font-family: 'Work Sans';
+    font-weight: 600;
 }
 
 .navbar li a {
-    font-size: 1.2rem;
-    font-weight: bold;
+    font-size: 1.4rem;
     margin: 0px 20px;
-    color: white;
+    color: rgba(255, 255, 255, 0.808);
+    padding: 5px;
 }
 
 .navbar li a:hover {
-    color: black;
+    color: white;
+    text-shadow: 0 5px 25px white;
+    font-weight: 700;
+}
+
+.active {
+    color: white;
+    text-shadow: 0 5px 25px white;
+    font-weight: 700;
+    border: 1px dashed white;
 }

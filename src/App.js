@@ -13,7 +13,6 @@ function App() {
     <BrowserRouter>
       <div className="App">
         <Header />
-        <h1>Portland Kickball</h1>
         <Switch>
           <Route exact path='/'>
             <Main />
