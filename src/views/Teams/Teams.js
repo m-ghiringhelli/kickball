@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { getTeams } from '../../services/teams';
 import { Link } from 'react-router-dom';
+import './Teams.css';
 
 export default function Teams() {
   const [teams, setTeams] = useState([]);
@@ -21,11 +22,12 @@ export default function Teams() {
   if (errorMessage) return <div>{errorMessage}</div>;
 
   return (
-    <div>
+    <div className='teamCardContainer'>
       {teams.map((team) => (
-        <div key={team.id}>
+        <div className='teamCard' key={team.id}>
+          <img className='teamLogo' src={`./images/${team.id}.png`} />
           <Link to={`/teams/${team.id}`} className='link'>
-            <h2>{team.name}</h2>
+            <h2>{team.name.toUpperCase()}</h2>
           </Link>
         </div>
       ))}
