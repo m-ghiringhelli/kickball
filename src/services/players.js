@@ -8,4 +8,9 @@ export async function getPlayers(team) {
   }
   const request = await client.from('players').select('*');
   return request;
-} 
+}
+
+export async function getPlayerById(id) {
+  const request = await client.from('players').select('*').match({ id });
+  return request;
+}
