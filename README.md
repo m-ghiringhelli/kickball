@@ -13,3 +13,5 @@
 - Player detail
     -render detail
 - fetch functions
+
+next step: get player detail to render full details, then attach to player list
