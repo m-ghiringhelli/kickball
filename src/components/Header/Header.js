@@ -7,7 +7,7 @@ export default function Header() {
     <header style={{
       backgroundImage: `url(${process.env.PUBLIC_URL + '/images/green-hill.jpg'})`
     }}>
-      <ul>
+      <ul className='navbar'>
         <li>
           <NavLink exact to='/' className='link'>
             HOME

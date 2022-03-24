@@ -3,3 +3,22 @@ header {
     background-size: cover;
     background-position: 50% 65%;
 }
+
+.navbar {
+    display: flex;
+    position: relative;
+    justify-content: flex-end;
+    top: 140px;
+    margin-right: 50px;
+}
+
+.navbar li a {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin: 0px 20px;
+    color: white;
+}
+
+.navbar li a:hover {
+    color: black;
+}
