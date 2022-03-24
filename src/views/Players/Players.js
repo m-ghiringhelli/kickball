@@ -11,7 +11,7 @@ export default function Players() {
     };
     fetchData();
   }, []);
-
+  
   return (
     <div>
       {players.map((player) => (

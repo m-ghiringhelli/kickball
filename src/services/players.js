@@ -6,11 +6,11 @@ export async function getPlayers(team) {
     const request = await client.from('players').select('*').match({ team_id: team });
     return request;
   }
-  const request = await client.from('players').select('*');
+  const request = await client.from('players').select('*, teams (*)');
   return request;
 }
 
 export async function getPlayerById(id) {
-  const request = await client.from('players').select('*').match({ id });
+  const request = await client.from('players').select('*, teams (*)').match({ id });
   return request;
 }
