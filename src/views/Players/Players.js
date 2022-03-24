@@ -17,7 +17,7 @@ export default function Players() {
     <div>
       {players.map((player) => (
         <div key={player.id}>
-          <PlayerLink player={player} />
+          <PlayerLink player={player} className='link' />
         </div>
       ))}
     </div>

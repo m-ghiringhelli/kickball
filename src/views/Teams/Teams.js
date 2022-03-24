@@ -24,7 +24,7 @@ export default function Teams() {
     <div>
       {teams.map((team) => (
         <div key={team.id}>
-          <Link to={`/teams/${team.id}`}>
+          <Link to={`/teams/${team.id}`} className='link'>
             <h2>{team.name}</h2>
           </Link>
         </div>

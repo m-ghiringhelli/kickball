@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import PlayerLink from '../PlayerLink/PlayerLink';
 
 export default function Team({ team, teamPlayers }) {
   return (
@@ -8,9 +8,7 @@ export default function Team({ team, teamPlayers }) {
       <ul>
         {teamPlayers.map((player) => (
           <li key={player.id}>
-            <Link to={`/players/${player.id}`}>
-              {player.name}
-            </Link>
+            <PlayerLink player={player} />
           </li>
         ))}
       </ul>

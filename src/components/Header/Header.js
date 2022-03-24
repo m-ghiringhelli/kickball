@@ -6,17 +6,17 @@ export default function Header() {
     <header>
       <ul>
         <li>
-          <NavLink exact to='/'>
+          <NavLink exact to='/' className='link'>
             HOME
           </NavLink>
         </li>
         <li>
-          <NavLink to='/players'>
+          <NavLink to='/players' className='link'>
             PLAYERS
           </NavLink>
         </li>
         <li>
-          <NavLink to='/teams'>
+          <NavLink to='/teams' className='link'>
             TEAMS
           </NavLink>
         </li>
