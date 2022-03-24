@@ -12,16 +12,22 @@ export default function Player() {
     getPlayerById(id).then(({ data }) => setPlayer(data[0]));
     setTimeout(() => {
       setLoading(false);
-    }, 500);
+    }, 700);
   }, [id]);
 
   if (loading) return <div>loading...</div>;
   
   return (
-    <div>
-      <p>{player.name}</p>
-      <p>{player.position}</p>
-      <TeamLink team={player.teams}/>
+    <div className='playerCard'>
+      <div>
+        <p className='playerName key'>name:</p>
+        <p className='playerName value'>{player.name.toUpperCase()}</p>
+      </div>
+      <div>
+        <p className='playerPosition key'>position:</p>
+        <p className='playerPosition value'>{player.position.toLowerCase()}</p>
+      </div>
+      <TeamLink className='playerTeamName' team={player.teams}/>
     </div>
   );
 }

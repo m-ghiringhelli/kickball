@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { getPlayers } from '../../services/players';
 import PlayerLink from '../../components/PlayerLink/PlayerLink';
+import './Players.css';
 
 export default function Players() {
   const [players, setPlayers] = useState([]);
@@ -14,9 +15,9 @@ export default function Players() {
   }, []);
   
   return (
-    <div>
+    <div className='playerList'>
       {players.map((player) => (
-        <div key={player.id}>
+        <div className='playerListPlayer' key={player.id}>
           <PlayerLink player={player} className='link' />
         </div>
       ))}
