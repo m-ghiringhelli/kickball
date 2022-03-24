@@ -19,6 +19,7 @@ export default function Players() {
       {players.map((player) => (
         <div className='playerListPlayer' key={player.id}>
           <PlayerLink player={player} className='link' />
+          <img className='playerLogo' src={`/images/${player.team_id}.png`} />
         </div>
       ))}
     </div>

@@ -11,6 +11,8 @@ body {
 }
 
 .playerListPlayer {
+    display: flex;
+    justify-content: space-between;
     margin: 10px auto;
     padding: 10px;
     background-color: white;
@@ -76,4 +78,9 @@ body {
     font-weight: 300;
     background-color: white;
     padding: 8px;
+}
+
+.playerLogo {
+    width: 30px;
+    height: 30px;
 }
