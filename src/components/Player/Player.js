@@ -15,7 +15,7 @@ export default function Player() {
     }, 700);
   }, [id]);
 
-  if (loading) return <div>loading...</div>;
+  if (loading) return <div className='loading'>loading...</div>;
   
   return (
     <div className='playerCard'>
