@@ -6,7 +6,7 @@ import Team from '../../components/Team/Team';
 
 export default function TeamDetail() {
   const id = useParams().id;
-  const [team, setTeam] = useState(null);
+  const [team, setTeam] = useState([]);
   const [teamPlayers, setTeamPlayers] = useState([]);
 
   useEffect(() => {
@@ -16,7 +16,7 @@ export default function TeamDetail() {
 
   return (
     <div>
-      <Team />
+      <Team {...{ team, teamPlayers }}/>
     </div>
   );
 }
