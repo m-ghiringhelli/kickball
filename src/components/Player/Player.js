@@ -12,7 +12,7 @@ export default function Player() {
     getPlayerById(id).then(({ data }) => setPlayer(data[0]));
     setTimeout(() => {
       setLoading(false);
-    }, 1000);
+    }, 500);
   }, [id]);
 
   if (loading) return <div>loading...</div>;
