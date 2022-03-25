@@ -31,6 +31,7 @@
     border: 3px solid var(--color-1);
     font-family: 'Work Sans';
     font-weight: 400;
+    transition: 0.5s;
 }
 
 .teamCard h2:hover {

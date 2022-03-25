@@ -3,6 +3,7 @@ import { getTeamById } from '../../services/teams';
 import { getPlayers } from '../../services/players';
 import { useParams } from 'react-router-dom';
 import Team from '../../components/Team/Team';
+import './TeamDetail.css';
 
 export default function TeamDetail() {
   const id = useParams().id;
@@ -15,7 +16,7 @@ export default function TeamDetail() {
   }, [id]);
 
   return (
-    <div>
+    <div className='teamDetailCard'>
       <Team {...{ team, teamPlayers }}/>
     </div>
   );
