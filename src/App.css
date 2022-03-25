@@ -1,38 +1,38 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@100;300;400;700&family=Work+Sans:wght@100;200;300;400;600;700&display=swap');
+
+* {
+  margin: 0;
+}
+
+body {
+  --color-1: hsla(219, 27%, 41%, 1);
+  --color-2: hsla(206, 83%, 58%, 1);
+  --color-3: hsla(0, 0%, 100%, 1);
+  --color-4: hsla(169, 82%, 42%, 1);
+  --color-5: hsla(60, 6%, 18%, 1);
+}
+
 .App {
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.link {
+  text-decoration: none;
+  color: black;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.loading {
+  font-family: 'Work Sans';
+  font-weight: 100;
+  font-size: 4rem;
+  padding: 50px;
+  width: 500px;
+  margin: 50px auto;
+  background-color: white;
+  border: 10px solid var(--color-2);
+
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+ul {
+  list-style: none;
 }

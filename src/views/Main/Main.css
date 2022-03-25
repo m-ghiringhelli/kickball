@@ -1,0 +1,12 @@
+.homeCard {
+    background-color: white;
+    border: 10px solid var(--color-4);
+    font-size: 5rem;
+    color: var(--color-1);
+    font-family: 'Work Sans';
+    font-weight: 300;
+    width: 50%;
+    margin: 50px auto;
+    padding: 50px;
+    border-radius: 25px;
+}

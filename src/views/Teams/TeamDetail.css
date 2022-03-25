@@ -1,0 +1,23 @@
+.teamDetailCard {
+    background-color: white;
+    border: 5px solid var(--color-2);
+    width: 500px;
+    margin: 50px auto;
+}
+
+.teamCardName {
+    font-family: 'Libre Baskerville';
+    padding: 10px;
+    font-size: 2.2rem;
+}
+
+.teamCardCity {
+    font-family: 'Work Sans';
+    font-weight: 300;
+    font-style: italic;
+}
+
+.teamCardLogo {
+    width: 200px;
+    height: 200px;
+}
